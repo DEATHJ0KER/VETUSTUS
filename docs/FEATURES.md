@@ -1,6 +1,6 @@
 # VETUSTUS features
 
-Current public project snapshot: **0.2.0-alpha.13 R7 · PRE-BETA**.
+Current public project snapshot: **0.2.0-alpha.13 R8 · PRE-BETA**.
 
 VETUSTUS is a Windows desktop client for **IRC, XDCC and DCC** built around its own Native Core. mIRC is not required and is not bundled.
 
@@ -51,9 +51,13 @@ VETUSTUS does not ship third-party API keys. Users configure their own credentia
 
 ## Localization
 
-The UI supports 14 languages:
+VETUSTUS exposes 14 selectable UI languages:
 
 IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
+
+R8 adds explicit 14-language parity for the **chat/composer surface**, including default quick phrases, sticker panels and visible sticker labels, emoji categories, text effects, tooltips and chat filters.
+
+IRC sticker shortcodes remain language-neutral for interoperability. Some advanced Pre-Beta strings may still use the English fallback in secondary locales, so full application-wide 14-language parity is not claimed yet.
 
 ## Project
 
