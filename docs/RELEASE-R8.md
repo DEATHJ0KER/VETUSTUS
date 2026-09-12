@@ -14,6 +14,10 @@ R8 is a focused localization release built on the stable R7 feature set.
 - Switching the UI language rerenders dynamic quick phrases and sticker labels immediately.
 - Added a dedicated regression test that requires explicit chat/composer translations for IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO and ZH.
 
+## Localization scope
+
+VETUSTUS exposes 14 selectable UI languages. R8 guarantees explicit 14/14 coverage for the chat/composer surface listed above. Some advanced Pre-Beta strings in secondary locales can still use the English fallback; application-wide 14-language parity is therefore not claimed yet.
+
 ## Preserved from R7
 
 - Native multi-network IRC core.
@@ -30,7 +34,7 @@ R8 is a focused localization release built on the stable R7 feature set.
 
 Automated suite: **71/71 PASS**  
 Runtime validator: **PASS**  
-i18n audit: **PASS**  
+Legacy general i18n audit: **PASS**  
 Dedicated 14-language composer coverage: **PASS**
 
 ## Installer
