@@ -4,19 +4,31 @@ Official VETUSTUS downloads are distributed from **vxd.mobi**:
 
 https://www.vxd.mobi/vetustus/download/
 
-Current public Beta line: **0.2.0-alpha.13 R7 · PRE-BETA**
+Current public Beta line: **0.2.0-alpha.13 R8 · PRE-BETA**
 
 ## Verify your download
 
-Current R7 setup:
+Current R8 setup:
 
-`VETUSTUS-0.2.0-alpha.13-setup-x64-R7.exe`
+`VETUSTUS-0.2.0-alpha.13-setup-x64-R8.exe`
 
 SHA-256:
 
-`ffb8091b6645bdfb8b7af6815d8aecfa8c522dd85753db49bf7dc4b9a1d42ab5`
+`2484ecd63e565c000877fb0671efe1c70ef312e10f0dcbedfc26591358601f09`
 
-The website may offer a ZIP wrapper for manual browser download. The current VETUSTUS updater uses the direct setup EXE because it verifies the installer hash and launches it.
+Manual browser ZIP:
+
+`VETUSTUS-0.2.0-alpha.13-R8-Windows-x64.zip`
+
+SHA-256:
+
+`70450da3714d7324ccd52e8ae8536bed53064778a2c5ba38b86f81ead9b62f09`
+
+The website may offer the ZIP wrapper for manual browser download. The current VETUSTUS updater uses the direct setup EXE because it verifies the installer hash and launches it.
+
+## R8 localization note
+
+R8 explicitly localizes the chat/composer surface across all 14 selectable UI languages: default quick phrases, sticker categories and visible labels, emoji categories, text effects, tooltips and chat filters. IRC sticker shortcodes remain language-neutral for interoperability.
 
 ## Windows warning
 
