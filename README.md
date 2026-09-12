@@ -2,7 +2,7 @@
 
 **VETUSTUS** is a Windows desktop client for **IRC, XDCC and DCC**, developed as a project of **[vxd.mobi](https://www.vxd.mobi/)** by **VxD aka DEATHJ0KER**.
 
-Current public project snapshot: **0.2.0-alpha.13 R7 · PRE-BETA**.
+Current public project snapshot: **0.2.0-alpha.13 R8 · PRE-BETA**.
 
 Project page: https://www.vxd.mobi/vetustus/  
 Official downloads: https://www.vxd.mobi/vetustus/download/
@@ -23,12 +23,14 @@ Official downloads: https://www.vxd.mobi/vetustus/download/
 - Plug-in manager under Settings.
 - Diagnostics/self-check/reporting tools.
 - 14 UI languages: IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
+- R8 adds explicit 14-language parity for the chat composer surface: quick phrases, sticker panels/labels, emoji categories, text effects, tooltips and chat filters.
 - HTTPS/SHA-256 update client tied to `vxd.mobi`.
 
 ## Documentation
 
 - [Feature overview](docs/FEATURES.md)
 - [Quick Start](docs/QUICKSTART.md)
+- [R8 release notes](docs/RELEASE-R8.md)
 - [R7 release notes](docs/RELEASE-R7.md)
 - [Download and hash verification](DOWNLOAD.md)
 - [Security policy](SECURITY.md)
@@ -36,11 +38,11 @@ Official downloads: https://www.vxd.mobi/vetustus/download/
 
 ## Release
 
-Current tested installer: `VETUSTUS-0.2.0-alpha.13-setup-x64-R7.exe`
+Current tested installer: `VETUSTUS-0.2.0-alpha.13-setup-x64-R8.exe`
 
 SHA-256:
 
-`ffb8091b6645bdfb8b7af6815d8aecfa8c522dd85753db49bf7dc4b9a1d42ab5`
+`2484ecd63e565c000877fb0671efe1c70ef312e10f0dcbedfc26591358601f09`
 
 The official browser download is distributed from **vxd.mobi**, not GitHub.
 
