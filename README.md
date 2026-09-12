@@ -25,6 +25,15 @@ Official downloads: https://www.vxd.mobi/vetustus/download/
 - 14 UI languages: IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
 - HTTPS/SHA-256 update client tied to `vxd.mobi`.
 
+## Documentation
+
+- [Feature overview](docs/FEATURES.md)
+- [Quick Start](docs/QUICKSTART.md)
+- [R7 release notes](docs/RELEASE-R7.md)
+- [Download and hash verification](DOWNLOAD.md)
+- [Security policy](SECURITY.md)
+- [Project provenance](NOTICE.md)
+
 ## Release
 
 Current tested installer: `VETUSTUS-0.2.0-alpha.13-setup-x64-R7.exe`
@@ -43,9 +52,9 @@ VETUSTUS is free Beta/Pre-Beta software and may contain bugs, incompatibilities 
 
 ## Repository status
 
-This repository is the official project/development home. Production private keys, API credentials, activation secrets, user data and packaged runtime payloads are intentionally excluded.
+This repository is the official project/development reference for VETUSTUS. Production private keys, API credentials, activation secrets, user data and packaged runtime payloads are intentionally excluded.
 
-The clean R7 source snapshot is being maintained separately from generated binaries and installer payloads so build artifacts and secrets are never committed accidentally.
+Generated installers and downloadable release archives are distributed from `vxd.mobi`, keeping GitHub focused on project provenance, documentation and development material.
 
 ## Copyright / source publication
 
