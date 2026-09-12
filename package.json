@@ -1,0 +1,20 @@
+{
+  "name": "vetustus-desktop",
+  "version": "0.2.0-alpha.13",
+  "description": "VETUSTUS by vxd.mobi. Standalone native IRC/XDCC/DCC desktop client.",
+  "main": "src/main/main.js",
+  "author": "vxd.mobi",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test": "node --test tests/*.test.js",
+    "validate": "node tools/validate.js",
+    "validate:i18n": "node tools/i18n-audit.js"
+  },
+  "devDependencies": {
+    "electron": "44.0.0",
+    "electron-builder": "26.0.12"
+  }
+}

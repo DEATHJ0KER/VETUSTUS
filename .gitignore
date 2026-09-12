@@ -1,8 +1,29 @@
-resources/app/node_modules/
-resources/app/dist/
+node_modules/
+dist/
 release/
-server-tools/www-vxd-mobi-vetustus/releases/*.exe
-server-tools/www-vxd-mobi-vetustus/update.json
+data/
+downloads/
 *.log
+*.tmp
 .DS_Store
 Thumbs.db
+
+# Build payloads / packaged runtimes
+installer/payload.zip
+installer/payload.sha256
+*.exe
+*.zip
+*.7z
+
+# Secrets and production key material
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+!*.example
+
+# Local app state
+ai-vault.json
+secret-vault.json
+license-state.json

@@ -1,0 +1,28 @@
+name: VETUSTUS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Repository safety check
+        shell: pwsh
+        run: |
+          if (Get-ChildItem -Recurse -File -Include *.key,*.p12,*.pfx,.env | Select-Object -First 1) { throw 'Private key or secret file detected in repository.' }
+          Write-Host 'Repository safety check OK.'

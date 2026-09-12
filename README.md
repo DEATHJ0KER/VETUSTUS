@@ -1,22 +1,54 @@
-# VETUSTUS 0.2.0-alpha.13 · SERVERS / UPGRADE / MULTILINGUAL SETUP
+# VETUSTUS
 
-**VETUSTUS — Script by VxD aka DEATHJ0KER**
+**VETUSTUS** is a Windows desktop client for **IRC, XDCC and DCC**, developed as a project of **[vxd.mobi](https://www.vxd.mobi/)** by **VxD aka DEATHJ0KER**.
 
-Standalone portable Windows client for IRC, XDCC and DCC. VETUSTUS 0.2 uses its own native networking core: **mIRC is not required and is not bundled**.
+Current public project snapshot: **0.2.0-alpha.13 R7 · PRE-BETA**.
 
-Project page: `https://vxd.mobi/vetustus/`
+Project page: https://www.vxd.mobi/vetustus/  
+Official downloads: https://www.vxd.mobi/vetustus/download/
 
+> VETUSTUS 0.2 uses its own Native IRC Core. **mIRC is not required and is not bundled.**
 
-## Alpha.13 · Production hardening
+## Highlights
 
-La build installabile viene prodotta con ASAR integrity ed Electron Fuses: `RunAsNode`, `NODE_OPTIONS` e inspector CLI sono disabilitati, l'app carica esclusivamente `app.asar`, i cookie Chromium sono cifrati e DevTools è disattivato nelle build packaged. L'attivazione resta gratuita e automatica, ma ogni token Ed25519 emesso da `vxd.mobi` è legato a installazione, fingerprint Windows, versione e SHA-256 esatto di `app.asar`. Lo stato locale usa `safeStorage`/DPAPI quando disponibile. La chiave privata di firma non viene mai inclusa nel repository o negli artifact.
+- Native multi-network IRC engine with TCP/TLS/STARTTLS, CAP/SASL and NickServ flows.
+- Automatic channel discovery with IRC `LIST`, filtering and double-click/Enter join.
+- Global optional primary/alternate nickname with per-network fallback.
+- Channel/query chat, nicklist, WHOIS, CTCP, Ignore, DCC Send and privilege-aware moderation actions.
+- XDCC Search with client-side filters, persistent requests, queue diagnostics and DCC resume.
+- Native DCC download, resume and local upload.
+- Transfer Manager with progress, ETA, queue state and media actions.
+- Internal Player for supported audio/video/images, playlists and library folders.
+- Optional AI Center supporting cloud providers, Ollama, LM Studio and custom endpoints.
+- Plug-in manager under Settings.
+- Diagnostics/self-check/reporting tools.
+- 14 UI languages: IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
+- HTTPS/SHA-256 update client tied to `vxd.mobi`.
 
-## Alpha.13 · Server registry / Upgrade / Setup
+## Release
 
-Questa build rende `servers.ini` autorevole e lo distribuisce con il solo `n0`. L'Upgrade System è vincolato a `https://www.vxd.mobi/vetustus/`, verifica HTTPS e SHA-256, scarica il setup e chiude VETUSTUS prima della sostituzione. Il setup NSIS è predisposto per 14 lingue e trasferisce la lingua scelta al primo avvio dell'interfaccia.
+Current tested installer: `VETUSTUS-0.2.0-alpha.13-setup-x64-R7.exe`
 
-Sono inclusi `BUILD-SETUP.cmd` e `PREPARE-WEB-UPDATE.cmd` per generare rispettivamente il setup Windows e il pacchetto da pubblicare sul sito.
+SHA-256:
 
-## GitHub Actions / Windows Setup
+`ffb8091b6645bdfb8b7af6815d8aecfa8c522dd85753db49bf7dc4b9a1d42ab5`
 
-La alpha.13 include `.github/workflows/vetustus-windows-release.yml`, una pipeline Windows per produrre automaticamente Setup NSIS x64, Portable, ZIP e il bundle `update.json` destinato a `https://www.vxd.mobi/vetustus/`. Vedi `GITHUB-ACTIONS-SETUP.md`.
+The official browser download is distributed from **vxd.mobi**, not GitHub.
+
+## Beta notice
+
+VETUSTUS is free Beta/Pre-Beta software and may contain bugs, incompatibilities or unexpected behavior. Users remain responsible for their own API keys, configuration, automation, plug-ins, files and commands.
+
+**Prima verifica, poi accelera:** vale per una funzione sperimentale quanto per l'overclock della scheda video.
+
+## Repository status
+
+This repository is the official project/development home. Production private keys, API credentials, activation secrets, user data and packaged runtime payloads are intentionally excluded.
+
+The clean R7 source snapshot is being maintained separately from generated binaries and installer payloads so build artifacts and secrets are never committed accidentally.
+
+## Copyright / source publication
+
+`package.json` declares the project as **UNLICENSED**. Publication of repository contents does not by itself grant a separate open-source license.
+
+Copyright © vxd.mobi / VxD aka DEATHJ0KER.
