@@ -22,8 +22,9 @@ Official downloads: https://www.vxd.mobi/vetustus/download/
 - Optional AI Center supporting cloud providers, Ollama, LM Studio and custom endpoints.
 - Plug-in manager under Settings.
 - Diagnostics/self-check/reporting tools.
-- 14 UI languages: IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
+- 14 selectable UI languages: IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO, ZH.
 - R8 adds explicit 14-language parity for the chat composer surface: quick phrases, sticker panels/labels, emoji categories, text effects, tooltips and chat filters.
+- Some advanced Pre-Beta strings may still fall back to English in secondary locales; full application-wide 14-language parity is not claimed yet.
 - HTTPS/SHA-256 update client tied to `vxd.mobi`.
 
 ## Documentation
