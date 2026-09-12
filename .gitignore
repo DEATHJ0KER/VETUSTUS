@@ -1,0 +1,8 @@
+resources/app/node_modules/
+resources/app/dist/
+release/
+server-tools/www-vxd-mobi-vetustus/releases/*.exe
+server-tools/www-vxd-mobi-vetustus/update.json
+*.log
+.DS_Store
+Thumbs.db
