@@ -14,7 +14,7 @@ Current R8 setup:
 
 SHA-256:
 
-`2484ecd63e565c000877fb0671efe1c70ef312e10f0dcbedfc26591358601f09`
+`b44d0427050749ae0ec977979f5891f1f09991ac126105140a5ed253b3057203`
 
 Manual browser ZIP:
 
@@ -22,9 +22,15 @@ Manual browser ZIP:
 
 SHA-256:
 
-`70450da3714d7324ccd52e8ae8536bed53064778a2c5ba38b86f81ead9b62f09`
+`4ebf79cbb659acc207288a4cf907767722d5ccf2df1e8764daeef7ad53885936`
 
-The website may offer the ZIP wrapper for manual browser download. The current VETUSTUS updater uses the direct setup EXE because it verifies the installer hash and launches it.
+The website may offer the ZIP wrapper for manual browser download. The VETUSTUS updater uses the direct setup EXE because it verifies the installer hash before launching it.
+
+## Automatic Beta authorization
+
+The current R8 build performs an automatic authenticity/authorization check with the official `vxd.mobi` service. No account, email address, license key or manual activation dialog is required.
+
+Authorization is signed with Ed25519 and the current state can be viewed in **Settings → Info / Author**.
 
 ## R8 localization note
 
