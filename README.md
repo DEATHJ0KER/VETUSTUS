@@ -26,6 +26,15 @@ Official downloads: https://www.vxd.mobi/vetustus/download/
 - R8 adds explicit 14-language parity for the chat composer surface: quick phrases, sticker panels/labels, emoji categories, text effects, tooltips and chat filters.
 - Some advanced Pre-Beta strings may still fall back to English in secondary locales; full application-wide 14-language parity is not claimed yet.
 - HTTPS/SHA-256 update client tied to `vxd.mobi`.
+- Automatic **signed Beta authorization** backed by `vxd.mobi`; no account, email or activation code is required.
+
+## Beta authorization
+
+The current R8 build performs an automatic authenticity/authorization check with the official `vxd.mobi` service. The authorization response is signed with **Ed25519** and validated by the client.
+
+No manual activation dialog, account or license key is required. The current authorization state is visible under **Settings → Info / Author**.
+
+The production signing private key and server-side activation material are never stored in this repository.
 
 ## Documentation
 
@@ -43,7 +52,15 @@ Current tested installer: `VETUSTUS-0.2.0-alpha.13-setup-x64-R8.exe`
 
 SHA-256:
 
-`2484ecd63e565c000877fb0671efe1c70ef312e10f0dcbedfc26591358601f09`
+`b44d0427050749ae0ec977979f5891f1f09991ac126105140a5ed253b3057203`
+
+Manual browser ZIP:
+
+`VETUSTUS-0.2.0-alpha.13-R8-Windows-x64.zip`
+
+SHA-256:
+
+`4ebf79cbb659acc207288a4cf907767722d5ccf2df1e8764daeef7ad53885936`
 
 The official browser download is distributed from **vxd.mobi**, not GitHub.
 
