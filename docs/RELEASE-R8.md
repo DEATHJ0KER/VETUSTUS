@@ -1,8 +1,8 @@
 # VETUSTUS 0.2.0-alpha.13 R8
 
-**PRE-BETA · chat/composer localization parity**
+**PRE-BETA · 14-language chat/composer parity · signed Beta authorization**
 
-R8 is a focused localization release built on the stable R7 feature set.
+R8 is the current public Pre-Beta build, preserving the stable R7 feature set while completing the chat/composer localization pass and adding automatic signed Beta authorization through `vxd.mobi`.
 
 ## What changed
 
@@ -13,6 +13,10 @@ R8 is a focused localization release built on the stable R7 feature set.
 - IRC sticker shortcodes remain stable and language-neutral for interoperability with classic IRC clients.
 - Switching the UI language rerenders dynamic quick phrases and sticker labels immediately.
 - Added a dedicated regression test that requires explicit chat/composer translations for IT, EN, DE, ES, FR, PT, NL, PL, RU, UK, TR, JA, KO and ZH.
+- Added automatic Beta authorization through the official `vxd.mobi` service.
+- Authorization responses are signed with Ed25519 and verified by the client.
+- No account, email address, activation code or manual activation dialog is required.
+- Authorization status is exposed in **Settings → Info / Author**.
 
 ## Localization scope
 
@@ -32,10 +36,11 @@ VETUSTUS exposes 14 selectable UI languages. R8 guarantees explicit 14/14 covera
 
 ## QA
 
-Automated suite: **71/71 PASS**  
+Automated suite: **74/74 PASS**  
 Runtime validator: **PASS**  
-Legacy general i18n audit: **PASS**  
-Dedicated 14-language composer coverage: **PASS**
+i18n audit: **PASS**  
+Dedicated 14-language composer coverage: **PASS**  
+Signed authorization flow: **validated against the production vxd.mobi endpoint**
 
 ## Installer
 
@@ -43,7 +48,15 @@ Dedicated 14-language composer coverage: **PASS**
 
 SHA-256:
 
-`2484ecd63e565c000877fb0671efe1c70ef312e10f0dcbedfc26591358601f09`
+`b44d0427050749ae0ec977979f5891f1f09991ac126105140a5ed253b3057203`
+
+Manual browser ZIP:
+
+`VETUSTUS-0.2.0-alpha.13-R8-Windows-x64.zip`
+
+SHA-256:
+
+`4ebf79cbb659acc207288a4cf907767722d5ccf2df1e8764daeef7ad53885936`
 
 Official downloads remain on:
 
