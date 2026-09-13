@@ -42,6 +42,19 @@ Provider surfaces currently include OpenAI, Anthropic Claude, Google Gemini, Gro
 
 VETUSTUS does not ship third-party API keys. Users configure their own credentials or local engines.
 
+## Beta authorization and authenticity
+
+The current R8 build performs an automatic authorization/authenticity check against the official `vxd.mobi` service.
+
+- no account required
+- no email address required
+- no activation code required
+- no manual activation dialog
+- Ed25519-signed authorization response
+- current status visible in **Settings → Info / Author**
+
+Production signing keys and private server-side activation material are not published in this repository.
+
 ## Plug-ins and diagnostics
 
 - Plug-in manager under Settings
